@@ -1060,7 +1060,7 @@ li {
         font-size: 4rem;
     }
     .thank-popup{
-        left: 70vw;
+        left: 68.5vw;
         width: 50rem;
         height: 50rem;
         font-size: 4rem;
@@ -1078,6 +1078,12 @@ li {
     .popup-sub {
         width: 18rem!important;
         margin-top: 2rem;
+        font-size: 4rem;
+    }
+    .thank-popup{
+        left: 68.5vw;
+        width: 55rem;
+        height: 45rem;
         font-size: 4rem;
     }
 }
@@ -1126,7 +1132,7 @@ li {
     
     .sub-intro>pre {
         font-weight: 200;
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin-top: 0;
     }
     
