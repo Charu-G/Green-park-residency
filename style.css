@@ -955,12 +955,24 @@ li {
         height: 80rem!important;
         width: 50rem!important;
     }
+    .thank-popup{
+        left: 37vw;
+        width: 40rem;
+        height: 40rem;
+        font-size: 2rem;
+    }
 }
 
 @media screen and (max-width:500px) and (min-width:426px){
     .popup{
         top: 28rem;
         left: 130vw;
+    }
+    .thank-popup{
+        left: 55.5vw;
+        width: 40rem;
+        height: 40rem;
+        font-size: 3rem;
     }
 }
 
@@ -980,9 +992,6 @@ li {
     }
     .about>p{
         width: 23rem;
-    }
-    .thank-popup{
-        left: 45vw;
     }
     .copy>p {
         font-size: 2rem;
@@ -1048,6 +1057,12 @@ li {
     .popup-sub {
         width: 18rem!important;
         margin-top: 2rem;
+        font-size: 4rem;
+    }
+    .thank-popup{
+        left: 70vw;
+        width: 50rem;
+        height: 50rem;
         font-size: 4rem;
     }
 }
