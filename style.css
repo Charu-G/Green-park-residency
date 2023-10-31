@@ -978,6 +978,51 @@ li {
 
 
 @media screen and (max-width:768px) and (min-width:426px){
+    .hamburger {
+        position: absolute;
+        right: 2rem;
+    }
+    
+    nav>a>img {
+        height: 10rem!important;
+        width: 9rem;
+        top: 1rem;
+    }
+    
+    .inner-nav {
+        display: flex;
+    }
+    
+    .navbar-nav {
+        gap: 0.5rem;
+    }
+    
+    .nav-link {
+        display: flex;
+        height: 4rem;
+        align-items: center;
+    }
+    
+    .nav-link:hover {
+        color: #3f7236 !important;
+        font-size: 1.5rem !important;
+        font-weight: 600;
+    }
+    
+    .enquire {
+        margin-top: 0.8rem;
+        border: 2px solid #3f7236;
+        height: fit-content;
+        border-radius: 0.5rem;
+    }
+    
+    .enquire:hover {
+        background-color: #3f7236;
+    }
+    
+    .enquire-btn:hover {
+        color: white !important;
+    }
     .over-down{
         width: 67rem;
     }
