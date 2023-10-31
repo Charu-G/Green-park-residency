@@ -1,14 +1,17 @@
 // Scroll on click
 var navbar = document.querySelector(".navbar");
+
 let sticky = navbar.offsetTop;
+
 
 function scrollFunction() {
     if (window.scrollY >= sticky) {
-        navbar.classList.add("sticky")
+        navbar.classList.add("sticky");
     } else {
         navbar.classList.remove("sticky");
     }
 }
+
 
 window.addEventListener('scroll', scrollFunction);
 
@@ -41,7 +44,7 @@ window.addEventListener('scroll', scrollFunction);
 // Popup
 
 var popup = document.querySelector('.popup');
-var popup1 = document.querySelector('.popup1');
+// var popup1 = document.querySelector('.popup1');
 var body = document.querySelector('body');
 
 function myPopup() {
