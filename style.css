@@ -75,6 +75,7 @@ body {
     font-size: 20px;
     overflow-y: scroll;
     overflow-x: hidden;
+    touch-action: none;
 }
 
 /* .marginn{
@@ -204,13 +205,14 @@ html {
 }
 /* Popup */
 
-
-
-nav {
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+.navbar{
     background-color: white;
-    /* overflow: hidden; */
-    /* z-index:9999; */
+    width: 50rem;
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+    align-content: center;
+    height: fit-content;
 }
 
 .sticky {
@@ -220,54 +222,81 @@ nav {
     z-index: 99;
 }
 
-.navbar-expand-lg {
-    justify-content: space-between;
-}
-
-.hamburger {
-    position: absolute;
-    right: 2rem;
-}
-
-nav>a>img {
-    height: 5rem;
-    width: 5rem;
-}
-
-.inner-nav {
+.green-cont{
     display: flex;
-}
-
-.navbar-nav {
-    gap: 0.5rem;
-}
-
-.nav-link {
-    display: flex;
-    height: 4rem;
+    /* padding: 2rem; */
+    gap: 2rem;
     align-items: center;
+    /* flex-wrap: wrap; */
+    margin: 0;
+    /* width: 20rem; */
+    height: 5rem;
 }
 
-.nav-link:hover {
-    color: #3f7236 !important;
-    font-size: 1.5rem !important;
+.green>.green-cont>img, .green-ham>img{
+    width: 4rem;
+    height: 5rem;
+    margin-right: 4rem ;
+    left: 1rem;
+}
+
+.green-link{
+    font-size: 1.2rem;
+    color: black;
+    height: fit-content;
+    width: fit-content;
+}
+
+.green-link:hover{
+    text-decoration: none;
+    color: #3f7236;
+    font-size: 1.5rem;
     font-weight: 600;
 }
 
 .enquire {
-    margin-top: 0.8rem;
+    margin-top: 0.3rem;
     border: 2px solid #3f7236;
     height: fit-content;
     border-radius: 0.5rem;
+    background-color: #3f7236;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset !important;
 }
 
 .enquire:hover {
-    background-color: #3f7236;
+    color: white;
+    box-shadow: none;
 }
 
-.enquire-btn:hover {
-    color: white !important;
+.iconnav{
+    position: absolute;
+    top: 5rem;
+    right: 3rem;
+    display: none;
+    font-size: 5rem;
 }
+
+.green-ham{
+    display: flex;
+    gap: 15rem;
+}
+
+.green-ham>div>img{
+    margin-top: 20rem;
+    width: 20rem;
+}
+
+.green-ham-col{
+    display: flex;
+    flex-direction: column;
+}
+
+.green-ham-col>a{
+    font-size: 3rem;
+    margin: 2rem;
+}
+
 */
 /* Header */
 
@@ -276,6 +305,9 @@ section{
     padding-top: 15rem;
 }
 
+.addhead{
+    margin: 20rem;
+}
 
 #header, .header{
     display: flex!important;
@@ -978,51 +1010,7 @@ li {
 
 
 @media screen and (max-width:768px) and (min-width:426px){
-    .hamburger {
-        position: absolute;
-        right: 2rem;
-    }
     
-    nav>a>img {
-        height: 10rem!important;
-        width: 9rem;
-        top: 1rem;
-    }
-    
-    .inner-nav {
-        display: flex;
-    }
-    
-    .navbar-nav {
-        gap: 0.5rem;
-    }
-    
-    .nav-link {
-        display: flex;
-        height: 4rem;
-        align-items: center;
-    }
-    
-    .nav-link:hover {
-        color: #3f7236 !important;
-        font-size: 1.5rem !important;
-        font-weight: 600;
-    }
-    
-    .enquire {
-        margin-top: 0.8rem;
-        border: 2px solid #3f7236;
-        height: fit-content;
-        border-radius: 0.5rem;
-    }
-    
-    .enquire:hover {
-        background-color: #3f7236;
-    }
-    
-    .enquire-btn:hover {
-        color: white !important;
-    }
     .over-down{
         width: 67rem;
     }
@@ -1092,6 +1080,20 @@ li {
 
 
 @media screen and (max-width:426px) and (min-width:375px){
+
+    .green-cont{
+        display: none;
+    }
+
+    .iconnav{
+        display: block;
+    }
+
+    /* .ham-cont{
+        height: 10rem;
+        background-color: white;
+    } */
+
     .popup{
         top: 30rem;
         left: 95vw;
@@ -1135,7 +1137,10 @@ li {
 
 
 @media screen and (max-width:426px) and (min-width:320px){
-
+    nav>a>img {
+        height: 14rem!important;
+        width: 12rem;
+    }
     .marginn{
         width: 79.3rem;
     }
@@ -1584,3 +1589,23 @@ li {
         color: white;
     }
 }
+
+.nav-ham-cont{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    font-size: 2rem;
+    gap: 2rem;
+    /* margin: 2rem; */
+}
+
+.ham-button{
+    margin: 2rem;
+}
+
+.x-mark{
+    position: absolute;
+    right: 3rem;
+    top: 2.5rem;
+}
+

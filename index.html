@@ -57,19 +57,61 @@
             </div>
           </div>
         </nav> -->
-    <nav class="navbar navbar-expand-lg navbar-light">
+    <nav>
+        <div class="navbar">
+            <ul class="green">
+                <div class="green-cont">
+                    <img class="green-link" src="image/logo.png" alt="GreenPark Residency">
+                    <a class="green-link" href="#overview">OVERVIEW</a>
+                    <a class="green-link" href="#highlight">HIGHLIGHTS</a>
+                    <a class="green-link" href="#config">CONFIGURATION</a>
+                    <a class="green-link" href="#amenities">AMENITIES</a>
+                    <a class="green-link" href="#gallery">GALLERY</a>
+                    <a class="green-link" href="#floor-plan">FLOOR PLANS</a>
+                    <a class="green-link" href="#location">LOCATION</a>
+                    <a class="green-link" href="#about-us">ABOUT US</a>
+                    <button class="btn enquire" onclick="myPopup()">ENQUIRE NOW</button>
+                </div>
+            </ul>
+        </div> 
+            <ul class="green-ham" style="display: none;">
+                <div>
+                    <img class="green-link" src="image/logo.png" alt="GreenPark Residency">
+                </div>
+                <div class="green-ham-col">
+                    <a class="green-link" href="#overview">OVERVIEW</a>
+                    <a class="green-link" href="#highlight">HIGHLIGHTS</a>
+                    <a class="green-link" href="#config">CONFIGURATION</a>
+                    <a class="green-link" href="#amenities">AMENITIES</a>
+                    <a class="green-link" href="#gallery">GALLERY</a>
+                    <a class="green-link" href="#floor-plan">FLOOR PLANS</a>
+                    <a class="green-link" href="#location">LOCATION</a>
+                    <a class="green-link" href="#about-us">ABOUT US</a>
+                </div>
+            </ul>
+            <div class="ham-cont">
+                <i class="fa-solid fa-bars fa-xl iconnav icon-bar" onclick="hamMenu()"></i>
+                <i class="fa-solid fa-xmark fa-xl iconnav icon-x" onclick="closehamMenu()" style="display: none;"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#header">
             <img class="nav-link active" src="image/logo.png" alt="GreenPark Residency">
         </a>
-        <button class="navbar-toggler hamburger" type="button" data-toggle="collapse"
+        <div><i class="fa-solid fa-bars"></i></div>
+        
+        
+        <button onclick="hamMenu()" class="navbar-toggler hamburger" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <i class="fa-solid fa-xmark fa-xl x-mark" style="display: none;" onclick="closehamMenu()"></i> 
 
         <div class="inner-nav">
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
+            <div id="navbarSupportedContent">
+                <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link" href="#overview">OVERVIEW</a>
                     </li>
@@ -100,7 +142,7 @@
                 </ul>
             </div>
         </div>
-    </nav>
+    </nav> -->
     <div class="popup" style="display: none;">
         <div class="form popup-form">
             <div class="container">
@@ -511,7 +553,7 @@ Project Size    : 1.19 Acers, 171 Units</pre>
         </button>
     </div>
     <div class="call-mob">
-        <a class="single" href="tel:09082285250">Call us: <i class="fa-solid fa-phone" style="color: white;"></i> </a>
+        <a class="single" href="tel:09607319777">Call us: <i class="fa-solid fa-phone" style="color: white;"></i> </a>
     </div>
     <div class="enq-mob">
         <button class="btn enquire-btn" onclick="myPopup()">ENQUIRE NOW</button>
